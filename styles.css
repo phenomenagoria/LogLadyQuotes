@@ -1,0 +1,146 @@
+:root {
+  --bg: #0d0b0e;
+  --bg-deep: #050406;
+  --card: rgba(20, 17, 22, 0.72);
+  --text: #e9e2d6;
+  --muted: #9a8f7e;
+  --accent: #b54b3a; /* the red of the curtains */
+  --accent-dim: #7a3024;
+  --border: rgba(181, 75, 58, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "EB Garamond", Georgia, serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 50% 30%, #1a1419 0%, var(--bg) 55%, var(--bg-deep) 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem 3rem;
+}
+
+/* A soft dark vignette to mimic the dim cabin lighting. */
+.vignette {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+  padding: 2.75rem 2rem 2.25rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.4),
+    0 30px 60px -20px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+.intro {
+  font-family: "Special Elite", "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  color: var(--accent);
+  margin: 0 0 1.75rem;
+}
+
+.quote {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.5vw + 1rem, 2.1rem);
+  line-height: 1.45;
+  font-style: italic;
+  min-height: 5.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.25s ease;
+}
+
+.quote.is-fading {
+  opacity: 0;
+}
+
+.button {
+  margin-top: 2rem;
+  font-family: "Special Elite", "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dim) 100%);
+  border: none;
+  border-radius: 3px;
+  padding: 0.85rem 1.6rem;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 6px 18px -6px rgba(181, 75, 58, 0.7);
+}
+
+.button:hover {
+  filter: brightness(1.12);
+  box-shadow: 0 8px 22px -6px rgba(181, 75, 58, 0.9);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+.credit {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+  font-family: "Special Elite", "Courier New", monospace;
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+.credit em {
+  color: var(--text);
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 2rem 1.25rem 1.75rem;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Log Lady Speaks</title>
+  <meta name="description" content="A quote generator for the Log Lady from Twin Peaks." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Special+Elite&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="stage">
+    <div class="vignette" aria-hidden="true"></div>
+
+    <section class="card">
+      <p class="intro">My log has something to tell you&hellip;</p>
+
+      <blockquote id="quote" class="quote" aria-live="polite">
+        &hellip;
+      </blockquote>
+
+      <button id="new-quote" class="button" type="button">
+        Ask the log again
+      </button>
+    </section>
+
+    <p class="credit">
+      The Log Lady &middot; <em>Twin Peaks</em>
+    </p>
+  </main>
+
+  <script src="quotes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
