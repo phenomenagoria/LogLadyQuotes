@@ -26,12 +26,14 @@ python3 -m http.server 8000
 
 ## Host on GitHub Pages
 
-1. Push this repository to GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to *Deploy from a branch*.
-4. Choose the `claude/log-lady-quote-generator-yyal7t` branch (or `main` after
-   merging) and the `/ (root)` folder, then **Save**.
-5. Wait a moment, then visit `https://<your-username>.github.io/LogLadyQuotes/`.
+1. Go to **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to *Deploy from a branch*.
+3. Choose the `main` branch and the `/ (root)` folder, then **Save**.
+4. Wait a minute, then visit `https://<your-username>.github.io/LogLadyQuotes/`.
+
+No default-branch change is required — *Deploy from a branch* lets you pick
+`main` directly. (The site is plain static files, so GitHub serves them as-is;
+the included `.nojekyll` file disables Jekyll processing.)
 
 ## Add your own quotes
 
