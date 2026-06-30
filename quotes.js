@@ -1,0 +1,28 @@
+// Quotes from the Log Lady (Margaret Lanterman), Twin Peaks.
+// Drawn from her log-cabin introductions and her dialogue in the series.
+const LOG_LADY_QUOTES = [
+  "I carry a log. Yes. Is it funny to you? It is not to me.",
+  "Behind all things are reasons. Reasons can even explain the absurd.",
+  "Sometimes ideas, like men, jump up and say hello.",
+  "The log does not judge.",
+  "Letters are symbols. They are building blocks of words which form our languages. Languages help us communicate. Even with complete sentences and large words, do we communicate? I have a friend who says we are all like the dreamer who dreams and then lives inside the dream. But who is the dreamer?",
+  "The owls are not what they seem.",
+  "There are many stories in Twin Peaks. Some of them are sad, some funny. Some are stories of madness, of violence. Some are ordinary. Yet they all have about them a sense of mystery.",
+  "A log is a portion of a tree. At the end of our lives, we know our tree very well.",
+  "Fire is the devil, hiding like a coward in the smoke.",
+  "We don't know what will happen, or when, but there are owls in the Roadhouse.",
+  "My log saw something that night.",
+  "The wind moaning. The owls flying. Wood crackling like the sound of someone breathing.",
+  "This is the moment, and the moment is now.",
+  "One day my log will have something to say about this. My log saw something that night.",
+  "Coffee is the morning's first miracle. Drink it slowly, and it will speak to you.",
+  "The truth is, there is a chemical reaction that takes place when an electron is shared. This is the way of all living things.",
+  "Sometimes the things we cannot see are the most alive.",
+  "Look at the silence. Listen to the dark. There is something there.",
+  "Gifts are not always free. A gift may be given so that something else can be taken.",
+  "I do not know why, but what I tell you now is the truth, and it is for you to find the reason in it.",
+  "The night was electric. Do you remember being afraid, but glad to be afraid? That is the woods at night.",
+  "We are like the spider. We weave our life, and then move along in it. We are like the dreamer who dreams, and then lives inside the dream.",
+  "An idea is more durable than a thing, but ideas are no good without a cup of good coffee to think them over.",
+  "Even the ones who laugh are sometimes caught without an answer.",
+];
